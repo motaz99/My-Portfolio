@@ -1,0 +1,48 @@
+.container{
+  margin: 20px;
+}
+.container ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.container ul a{
+  text-decoration: none;
+  display: block;
+  padding: 10px
+}
+
+.container p{
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  
+  .container ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: start;
+  }
+  
+  .container ul a{
+    text-decoration: none;
+    display: block;
+    padding: 10px
+  }
+  
+
+  .container p{
+    color: white;
+    text-align: start;
+    margin-left: 50px;
+  }
+  
+}

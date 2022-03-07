@@ -1,0 +1,32 @@
+.navbar{
+    z-index: 100;
+}
+.link{
+    font-size: 20px;
+    color: #333;
+    position: relative;
+    border: none;
+}
+.link:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 32%;
+    height: 2px;
+    background: linear-gradient(to right, #ee274f, #62c0e3 70%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.link:hover{
+    color: #333;
+    text-decoration: none;
+}
+.link:hover:after{
+    width: 100%;
+}
+.link-active:after{
+    width: 100%;
+}
