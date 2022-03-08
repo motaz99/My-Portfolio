@@ -24,12 +24,13 @@
 
 
 @media screen and (min-width: 768px) {
-
+  .container{
+  }
   
   .container ul{
     display: flex;
     list-style-type: none;
-    justify-content: start;
+    justify-content: center;
   }
   
   .container ul a{
@@ -41,7 +42,7 @@
 
   .container p{
     color: white;
-    text-align: start;
+    text-align: center;
     margin-left: 50px;
   }
   

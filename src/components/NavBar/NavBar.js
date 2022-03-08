@@ -8,16 +8,16 @@ const NavBar = () => {
   return (
     <>
       <Navbar bg="black" expand="lg" variant='dark' >
-  <Container className='container-xxl '>
-    <Navbar.Brand className='navbar-brand ' as={NavLink} to={"/"}><img height={'60px'} width={'60px'}  src={logo} alt='logo' /></Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav " />
-    <Navbar.Collapse id="basic-navbar-nav">
+     <Container className='container-xxl '>
+     <Navbar.Brand className='navbar-brand ' as={NavLink} to={"/"}><img height={'60px'} width={'60px'}  src={logo} alt='logo' /></Navbar.Brand>
+     <Navbar.Toggle aria-controls="basic-navbar-nav " />
+     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto fw-bold navbar-collapse justify-content-end align-center">
-        <Nav.Link as={NavLink} exact activeClassName="link-active"  to={"/"}>HOME</Nav.Link>
-        <Nav.Link as={NavLink} activeClassName="link-active"  to={"/projects"}>PROJECTS</Nav.Link>
-        <Nav.Link as={NavLink} activeClassName="link-active"  to={"/contact"}>CONTACT</Nav.Link>
-        <Nav.Link as={NavLink} activeClassName="link-active"  to={"/skills"}>SKILLS</Nav.Link>
-        <Nav.Link as={NavLink} activeClassName="link-active"  to={"/resume"}>RESUME</Nav.Link>
+        <Nav.Link as={NavLink}  to={"/"}>HOME</Nav.Link>
+        <Nav.Link as={NavLink}  to={"/projects"}>PROJECTS</Nav.Link>
+        <Nav.Link as={NavLink}  to={"/contact"}>CONTACT</Nav.Link>
+        <Nav.Link as={NavLink}  to={"/skills"}>SKILLS</Nav.Link>
+        <Nav.Link as={NavLink}  to={"/resume"}>RESUME</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>

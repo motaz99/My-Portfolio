@@ -5,7 +5,7 @@ import {Button, Collapse} from 'react-bootstrap'
 import Typed from 'react-typed';
 import classes from './Body.module.css'
 import Lottie from 'lottie-web';
-import SocialMedia from '../SicalMedia/SocialMedia'
+import SocialMedia from '../SocialMedia/SocialMedia'
 
 
 
@@ -39,7 +39,7 @@ const Body = () => {
           {transition1((style, item) => item ? <animated.div style={style} className={classes.textControl}>
         <div className={classes.myNameTitle}>
         <p>Hi There, I'm</p>
-        <h2 className='display-6'>I'm Motaz Ali</h2>
+        <h2 className='display-6'>Motaz Ali</h2>
         <p>Freelancer Front-end Developer</p>
         <p > <Typed className="strongy"
                   strings={['The hardest things in life', 'Become simple with  time', 'Just stick with your goal', 'You will make it in the end']}
@@ -73,7 +73,7 @@ const Body = () => {
           </animated.div> : '')}
       </div>
       <div className={classes.animation}>
-          <div className={classes.container} ref={container}></div>
+          <div className={classes.container} ref={container} />
       </div>
     </div>
     

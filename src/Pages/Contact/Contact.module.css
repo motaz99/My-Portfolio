@@ -1,0 +1,42 @@
+.wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 98%;
+}
+
+.animation{
+    max-width: 300px;
+    display: flex;
+}
+.container{
+    text-align: center;
+}
+
+
+.title{
+    margin: 20px;
+    background: linear-gradient(to right, #ee123e, #35b4e2 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 900px) {
+  
+    .wrapper{
+        margin: 10px;
+        flex-direction: row;
+        justify-content: center;
+        width: 98%;
+    }
+
+    
+
+    .animation{
+        max-width: 25%;
+    }
+}
