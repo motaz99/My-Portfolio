@@ -1,0 +1,60 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title h1{
+    margin: 20px;
+    background: linear-gradient(to right, #ee123e, #35b4e2 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.Skills{
+    background: linear-gradient(to bottom, #ee123e, #35b4e2 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.animation{
+    max-width: 100%;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .wrapper{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .title{
+        margin: 5px;
+        max-width: 30%;
+    }
+
+    .Skills{
+        background: linear-gradient(to bottom, #ee123e, #35b4e2 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+   
+
+    .animation{
+        max-width: 35%;
+    }
+}
