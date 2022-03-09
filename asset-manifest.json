@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.96cdd730.css",
+    "main.js": "/My-Portfolio/static/js/main.3926c795.js",
+    "static/js/787.128fc6e9.chunk.js": "/My-Portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/attackLogo.png": "/My-Portfolio/static/media/attackLogo.bf3ae15c08ca6043c8b2.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.96cdd730.css.map": "/My-Portfolio/static/css/main.96cdd730.css.map",
+    "main.3926c795.js.map": "/My-Portfolio/static/js/main.3926c795.js.map",
+    "787.128fc6e9.chunk.js.map": "/My-Portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96cdd730.css",
+    "static/js/main.3926c795.js"
+  ]
+}
