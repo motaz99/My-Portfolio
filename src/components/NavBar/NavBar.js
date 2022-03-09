@@ -14,10 +14,10 @@ const NavBar = () => {
      <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto fw-bold navbar-collapse justify-content-end align-center">
         <Nav.Link as={NavLink}  to={"/"}>HOME</Nav.Link>
-        <Nav.Link as={NavLink}  to={"/projects"}>PROJECTS</Nav.Link>
+        {/* <Nav.Link as={NavLink}  to={"/projects"}>PROJECTS</Nav.Link> */}
         <Nav.Link as={NavLink}  to={"/contact"}>CONTACT</Nav.Link>
         <Nav.Link as={NavLink}  to={"/skills"}>SKILLS</Nav.Link>
-        <Nav.Link as={NavLink}  to={"/resume"}>RESUME</Nav.Link>
+        {/* <Nav.Link as={NavLink}  to={"/resume"}>RESUME</Nav.Link> */}
       </Nav>
     </Navbar.Collapse>
   </Container>

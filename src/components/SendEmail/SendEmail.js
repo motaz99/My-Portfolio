@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import classes from './SendEmail.module.css'
 import emailjs from 'emailjs-com'
+import { useTransition, animated } from 'react-spring'
+
 
 const SendEmail = () => {
-    const emailParameters ={
-        emailServesId: 'service_kuxdmt9',
-        templateId: 'template_flb7q4w',
-        integrationId: 'Vqeb-hFiZsG5Jl0WM'
+    const [items, setItems] = useState([]);
+    const transition1 = useTransition(items, {
+        from: { y: 300 , opacity: 0},
+        enter: { y: 0, opacity:1, config: { duration: 1050 }},
+      })
 
-    }
+      useEffect(()=>{
+        setItems(v => v.length ? [] : [{}]);
+      },[]);
     const sendEmail = (e) => {
         e.preventDefault()
         emailjs.sendForm(
@@ -25,7 +30,8 @@ const SendEmail = () => {
 
     }
   return (
-    <div className={classes.wrapper}>
+      <>
+    {transition1((style, item) => item ? <animated.div style={style} className={classes.wrapper}>
          <div className={classes.form}>
             <h1 className='display-6 text-info'>Send me a message</h1>
             <form action="" onSubmit={sendEmail} className='text-info'>
@@ -44,7 +50,8 @@ const SendEmail = () => {
                 <button className='text-info' type='submit' value='Send'>Send Email</button>
             </form>
         </div>
-    </div>
+    </animated.div> : '')}
+    </>
   )
 }
 

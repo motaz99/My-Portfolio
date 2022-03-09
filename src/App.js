@@ -4,8 +4,8 @@ import './App.css'
 import Home from './Pages/Home/Home';
 import Contact from './Pages/Contact/Contact';
 import Skills from './Pages/Skills/Skills'
-import Projects from './Pages/Projects/Projects';
-import Resume from './Pages/Resume/Resume'
+// import Projects from './Pages/Projects/Projects';
+// import Resume from './Pages/Resume/Resume'
 
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/skills' element={<Skills />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/resume' element={<Resume />} />
+        {/* <Route path='/projects' element={<Projects />} /> */}
+        {/* <Route path='/resume' element={<Resume />} /> */}
       </Routes>
     </>
   );
